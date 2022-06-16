@@ -1,0 +1,149 @@
+body{
+    text-align: center;
+    font-family: 'Poppins';
+    
+    background-image: url(bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%) ;
+    color: #ffff;
+    padding: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+.para{
+    text-align: center;
+    font-size: .98em;
+}
+
+.intro-trial{
+    font-style: italic;
+    padding: 10px;
+    margin: auto;
+    width: auto;
+    margin-bottom: 1rem;;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+}
+.big{
+    margin-left: 10px;   
+}
+form{
+    background-color: #fffdf7;
+    border-radius: 10px;
+    padding: 1rem;
+    
+    margin: auto;
+    width: auto;
+      
+}
+input{
+    display: block;
+    font-weight: bold;
+    font-size: .78em;
+    width: 90%;
+    border-radius: 5px;
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: .45em;
+    margin-top: 1rem;
+    border: 1px solid rgba(6, 13, 8, 0.12);
+}
+input:required:invalid{
+    outline: none;
+    border: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url(icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+input:invalid+span{
+    display: inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    padding: 10px;
+    padding-top: 5px;
+    margin-right: 15px;
+    font-size: 1em;
+
+}
+input:invalid{
+    outline: none;
+    border: none;
+    border: 1px solid hsl(154, 59%, 31%);
+}
+span{
+    display: none;
+}
+.first-name{
+    display: inline;
+}
+
+button{
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    font-size: .75em;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 5px;
+    width: 100%;
+    color: #fffdf7;
+    font-weight: bold;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: #fffdf7;
+}
+.last-para{
+    font-size: .78em;
+    color: rgba(82, 77, 78, 0.63);
+}
+.last-para a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px){
+    body{
+        background-image: url(bg-intro-desktop.png);
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    h1{
+        line-break:auto;
+        font-size: 40px;
+        text-align: justify;
+    }
+    .para{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .intro-talk{
+        display: flex;
+        border: 1px solid none;
+        flex-direction: column;
+        margin: auto;
+        text-align: justify;
+    }
+    .big{
+        width: auto;
+        height: 90%;
+    }
+    form{
+        width: auto;
+    }
+}
